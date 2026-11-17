@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhật Nguyễn — Multimedia Designer & Creative Team Leader</title>
+  <meta name="description" content="Portfolio & CV của Nguyễn Ngô Hoàng Nhật - Chuyên viên 11 năm kinh nghiệm Multimedia Design, Art Direction, Video & Motion Graphics." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cream: {
+              bg: '#F4F1EA',
+              card: '#FAF8F5',
+              soft: '#EBE6DC',
+            },
+            sage: {
+              DEFAULT: '#6A8B74',
+              dark: '#4D6D57',
+              light: '#E3ECE6',
+              ink: '#1E2B24',
+              muted: '#5A6B61',
+              border: '#D5DDD7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F4F1EA;
+      color: #1E2B24;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .bento-card {
+      background-color: #FAF8F5;
+      border: 1px solid #D5DDD7;
+      border-radius: 24px;
+      transition: all 0.25s ease;
+    }
+    .bento-card:hover {
+      border-color: #6A8B74;
+      box-shadow: 0 12px 30px -10px rgba(77, 109, 87, 0.14);
+      transform: translateY(-2px);
+    }
+    .sage-stripes {
+      background-color: #6A8B74;
+      background-image: repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.06) 0px,
+        rgba(255, 255, 255, 0.06) 14px,
+        transparent 14px,
+        transparent 28px
+      );
+    }
+    .nav-item.active {
+      background-color: #E3ECE6;
+      color: #4D6D57;
+      font-weight: 700;
+    }
+    .filter-btn.active {
+      background-color: #4D6D57;
+      color: #FFFFFF;
+      border-color: #4D6D57;
+    }
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #6A8B74;
+      box-shadow: 0 16px 32px -12px rgba(77, 109, 87, 0.2);
+    }
+
+    /* Tight Depth-Scale Overlapping Slide Carousel */
+    .depth-slide-card {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform, opacity, filter;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sage selection:text-white">
+
+  <div class="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+      <!-- LEFT STICKY SIDEBAR -->
+      <aside class="lg:col-span-3 lg:sticky lg:top-8 space-y-5">
+        <div class="bento-card p-6 text-center">
+          <div class="relative w-28 h-28 mx-auto mb-4 rounded-full p-1 bg-sage-light border-2 border-sage overflow-hidden shadow-sm">
+            <img id="sidebarAvatar" src="avatar.png" onerror="this.onerror=null;this.src='avatar.jpg';" alt="Nguyễn Ngô Hoàng Nhật" class="w-full h-full object-cover object-top rounded-full bg-sage-dark" />
+          </div>
+
+          <span class="inline-block px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-semibold tracking-wide mb-2">
+            11+ Năm Kinh Nghiệm
+          </span>
+          <h2 class="text-xl font-black text-sage-dark leading-tight">Nhật</h2>
+          <p class="text-xs font-bold text-sage-dark/90 mt-0.5">Nguyễn Ngô Hoàng</p>
+          <p class="text-xs text-sage-muted mt-1.5">Multimedia Designer & Creative Team Leader</p>
+
+          <div class="flex items-center justify-center gap-2.5 mt-4">
+            <a href="https://nnhoangnhat.myportfolio.com" target="_blank" rel="noopener" title="Xem Portfolio Dự Án" class="w-9 h-9 rounded-full bg-cream-soft hover:bg-sage hover:text-white flex items-center justify-center text-sage-dark transition text-xs font-bold">
+              Bē
+            </a>
+            <a href="mailto:nnhoangnhat@gmail.com" title="Email" class="w-9 h-9 rounded-full bg-cream-soft hover:bg-sage hover:text-white flex items-center justify-center text-sage-dark transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="tel:+84372112881" title="Điện thoại" class="w-9 h-9 rounded-full bg-cream-soft hover:bg-sage hover:text-white flex items-center justify-center text-sage-dark transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2.5 mt-5">
+            <a href="https://nnhoangnhat.myportfolio.com" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-full bg-sage-dark hover:bg-sage text-white text-xs font-bold transition shadow-sm flex items-center justify-center gap-1">
+              Portfolio ↗
+            </a>
+            <a href="#contact" class="py-2.5 px-3 rounded-full border border-sage text-sage-dark hover:bg-sage-light text-xs font-bold transition flex items-center justify-center">
+              Liên Hệ
+            </a>
+          </div>
+        </div>
+
+        <nav class="bento-card p-3 space-y-1 hidden lg:block">
+          <a href="#home" class="nav-item active flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage"></span> Tổng Quan
+          </a>
+          <a href="#about" class="nav-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage/40"></span> Giới Thiệu & Số Liệu
+          </a>
+          <a href="#services" class="nav-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage/40"></span> Lĩnh Vực Chuyên Môn
+          </a>
+          <a href="#toolkit" class="nav-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage/40"></span> Bộ Công Cụ Sáng Tạo
+          </a>
+          <a href="#experience" class="nav-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage/40"></span> Kinh Nghiệm Làm Việc
+          </a>
+          <a href="#contact" class="nav-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-sage-muted hover:bg-cream-soft transition">
+            <span class="w-2 h-2 rounded-full bg-sage/40"></span> Thông Tin & Liên Hệ
+          </a>
+        </nav>
+      </aside>
+
+      <!-- RIGHT MAIN BENTO CONTENT -->
+      <main class="lg:col-span-9 space-y-6">
+
+        <!-- HERO BANNER -->
+        <section id="home" class="bento-card p-6 sm:p-8 lg:p-10 relative overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-5">
+              <div class="sage-stripes rounded-2xl p-4 pb-0 relative overflow-hidden shadow-inner border border-sage/30 aspect-[4/4.3] flex items-end justify-center">
+                <span class="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-widest text-white/80 bg-black/15 px-2.5 py-1 rounded-md">
+                  MULTIMEDIA DESIGNER
+                </span>
+                <img id="heroAvatar" src="avatar.png" onerror="this.onerror=null;this.src='avatar.jpg';" alt="Nhật Nguyễn Portrait" class="w-full h-[92%] object-cover object-top rounded-t-xl drop-shadow-xl" />
+              </div>
+            </div>
+
+            <div class="md:col-span-7 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sage-light text-sage-dark text-xs font-bold">
+                <span class="w-2 h-2 rounded-full bg-sage-dark animate-pulse"></span>
+                Sẵn sàng cho vị trí Creative Lead / Senior Designer
+              </div>
+
+              <div>
+                <p class="text-sm font-medium text-sage-muted mb-1">Xin chào, mình là</p>
+                <h1 class="text-sage-dark select-none">
+                  <span class="block text-6xl sm:text-7xl lg:text-[88px] font-black leading-[0.95] tracking-tight">Nhật</span>
+                  <span class="block text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-tight tracking-tight mt-4">Nguyễn Ngô Hoàng</span>
+                </h1>
+              </div>
+
+              <p class="text-sm sm:text-base font-semibold text-sage-ink/80">
+                • Multimedia Designer &nbsp;• Art Direction &nbsp;• Video & Motion Graphics
+              </p>
+
+              <p class="text-sm text-sage-muted leading-relaxed">
+                “Đón nhận những thay đổi mới để phát triển bản thân.” — 11 năm kinh nghiệm dẫn dắt đội ngũ sáng tạo, định hướng nghệ thuật và sản xuất nội dung đa phương tiện từ Key Visual, POSM đến Video & AI Production.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="#portfolio" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage-dark hover:bg-sage text-white text-sm font-bold transition shadow-sm">
+                  Xem Portfolio Thực Tế
+                  <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs">↓</span>
+                </a>
+                <a href="#experience" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-cream-soft hover:bg-sage-light text-sage-dark text-sm font-bold transition">
+                  Hành Trình 11 Năm
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-sage-border flex flex-wrap items-center justify-between gap-4">
+            <span class="text-xs font-mono uppercase tracking-wider text-sage-muted">Dấu ấn đồng hành:</span>
+            <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-extrabold text-sage-dark/80">
+              <span>MILANO NAIL SPA (US)</span>
+              <span class="text-sage">•</span>
+              <span>TNI CORPORATION / KING COFFEE</span>
+              <span class="text-sage">•</span>
+              <span>VIỆT KHỞI LAND</span>
+              <span class="text-sage">•</span>
+              <span>SYSLYTIC (EEzZ APP)</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- BIOGRAPHY & METRICS -->
+        <section id="about" class="bento-card p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-bold w-fit">
+              ● Định Hướng Nghề Nghiệp
+            </span>
+            <p class="md:max-w-2xl text-lg sm:text-xl font-bold text-sage-ink leading-snug">
+              Chuyên gia Thiết kế Đa phương tiện & Định hướng Sáng tạo tập trung vào việc chuyển hóa ý tưởng thương hiệu thành hệ thống hình ảnh, video và trải nghiệm số có tính thẩm mỹ cao và hiệu quả truyền thông thực tế.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5">
+              <div class="text-3xl sm:text-4xl font-black text-sage-dark">11<span class="text-sage">+</span></div>
+              <div class="text-xs font-medium text-sage-muted mt-1">Năm Kinh Nghiệm</div>
+            </div>
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5">
+              <div class="text-3xl sm:text-4xl font-black text-sage-dark">04</div>
+              <div class="text-xs font-medium text-sage-muted mt-1">Doanh Nghiệp & Tập Đoàn</div>
+            </div>
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5">
+              <div class="text-3xl sm:text-4xl font-black text-sage-dark">360<span class="text-sage">°</span></div>
+              <div class="text-xs font-medium text-sage-muted mt-1">2D • Motion • Quay Dựng</div>
+            </div>
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5">
+              <div class="text-3xl sm:text-4xl font-black text-sage-dark">AI<span class="text-sage">+</span></div>
+              <div class="text-xs font-medium text-sage-muted mt-1">Tiên Phong Công Nghệ Mới</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CORE SERVICES / SPECIALTIES -->
+        <section id="services" class="bento-card p-6 sm:p-8 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-bold">
+              ● Năng Lực Cốt Lõi
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-sage-ink">Lĩnh Vực Chuyên Môn</h2>
+          </div>
+
+          <div class="space-y-3">
+            <div class="group rounded-2xl bg-cream-bg hover:bg-sage-light/60 border border-sage-border p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition">
+              <div class="flex items-start sm:items-center gap-4">
+                <span class="font-mono text-xs font-bold text-sage-dark bg-sage-light px-2.5 py-1 rounded-md">[001]</span>
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink group-hover:text-sage-dark transition">Art Direction & Creative Leadership</h3>
+                  <p class="text-xs text-sage-muted mt-0.5">Xây dựng concept, quản lý team Designer/Editor/Cameraman, phê duyệt chất lượng hình ảnh & đồng bộ nhận diện.</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">Concept</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">Team Lead</span>
+              </div>
+            </div>
+
+            <div class="group rounded-2xl bg-cream-bg hover:bg-sage-light/60 border border-sage-border p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition">
+              <div class="flex items-start sm:items-center gap-4">
+                <span class="font-mono text-xs font-bold text-sage-dark bg-sage-light px-2.5 py-1 rounded-md">[002]</span>
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink group-hover:text-sage-dark transition">Key Visual, POSM & Social Post</h3>
+                  <p class="text-xs text-sage-muted mt-0.5">Thiết kế ấn phẩm chiến dịch Digital (Poster, Banner MXH) và ấn phẩm in ấn thương mại (Catalogue, Standee, POSM).</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">Key Visual</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">POSM</span>
+              </div>
+            </div>
+
+            <div class="group rounded-2xl bg-cream-bg hover:bg-sage-light/60 border border-sage-border p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition">
+              <div class="flex items-start sm:items-center gap-4">
+                <span class="font-mono text-xs font-bold text-sage-dark bg-sage-light px-2.5 py-1 rounded-md">[003]</span>
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink group-hover:text-sage-dark transition">Video Production, Flycam & Motion Graphics</h3>
+                  <p class="text-xs text-sage-muted mt-0.5">Quay phim sự kiện doanh nghiệp, điều khiển Flycam, dựng phim, 2D Animation và ứng dụng AI Video Production.</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">Motion 2D</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">AI Video</span>
+              </div>
+            </div>
+
+            <div class="group rounded-2xl bg-cream-bg hover:bg-sage-light/60 border border-sage-border p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition">
+              <div class="flex items-start sm:items-center gap-4">
+                <span class="font-mono text-xs font-bold text-sage-dark bg-sage-light px-2.5 py-1 rounded-md">[004]</span>
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink group-hover:text-sage-dark transition">UI/UX Web & Mobile App Design</h3>
+                  <p class="text-xs text-sage-muted mt-0.5">Thiết kế giao diện 2D Website và ứng dụng di động thực tế (kinh nghiệm phát triển UX/UI App quản lý Salon EEzZ tại Mỹ).</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5 sm:justify-end">
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">UI/UX</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-sage-border text-[11px] font-semibold text-sage-dark">Mobile App</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CREATIVE TOOLKIT -->
+        <section id="toolkit" class="bento-card p-6 sm:p-8 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-bold">
+              ● Kỹ Năng & Phần Mềm
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-sage-ink">Bộ Công Cụ Sáng Tạo</h2>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-dark text-white font-black flex items-center justify-center text-lg mb-3">Ps</div>
+              <div class="font-bold text-sm text-sage-ink">Adobe Photoshop</div>
+              <div class="text-xs font-mono text-sage-dark mt-1">Photo & Key Visual</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-dark text-white font-black flex items-center justify-center text-lg mb-3">Ai</div>
+              <div class="font-bold text-sm text-sage-ink">Adobe Illustrator</div>
+              <div class="text-xs font-mono text-sage-dark mt-1">Vector & Branding</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-dark text-white font-black flex items-center justify-center text-lg mb-3">Pr</div>
+              <div class="font-bold text-sm text-sage-ink">Adobe Premiere</div>
+              <div class="text-xs font-mono text-sage-dark mt-1">Video Editing</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-dark text-white font-black flex items-center justify-center text-lg mb-3">Ae</div>
+              <div class="font-bold text-sm text-sage-ink">After Effects</div>
+              <div class="text-xs font-mono text-sage-dark mt-1">2D Motion Graphics</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-sm mb-3">CAM</div>
+              <div class="font-bold text-sm text-sage-ink">Cameraman</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">Quay Phim & Sự Kiện</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-sm mb-3">FPV</div>
+              <div class="font-bold text-sm text-sage-ink">Flycam</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">Aerial Cinematography</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-sm mb-3">3D</div>
+              <div class="font-bold text-sm text-sage-ink">3D Visualization</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">Mockup & Không Gian</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-sm mb-3">AI</div>
+              <div class="font-bold text-sm text-sage-ink">AI Video Production</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">Generative Workflow</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-xs mb-3">WEB</div>
+              <div class="font-bold text-sm text-sage-ink">Web Design</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">Landing Page &amp; UI</div>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-4 text-center hover:border-sage transition">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-sage-light text-sage-dark font-black flex items-center justify-center text-sm mb-3">&lt;/&gt;</div>
+              <div class="font-bold text-sm text-sage-ink">Vibe Coding</div>
+              <div class="text-xs font-mono text-sage-muted mt-1">AI-Assisted Web Dev</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK EXPERIENCE & EDUCATION -->
+        <section id="experience" class="bento-card p-6 sm:p-8 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-bold">
+              ● Lịch Sử Công Tác & Học Vấn
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-sage-ink">Kinh Nghiệm Làm Việc</h2>
+          </div>
+
+          <div class="space-y-4">
+            <div class="rounded-2xl bg-cream-bg border-l-4 border-l-sage-dark border border-sage-border p-5 sm:p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink">Team Leader — Milano Nail Spa (Dallas, US)</h3>
+                  <p class="text-xs font-semibold text-sage-dark">Quản lý Sáng tạo & Định hướng Nghệ thuật</p>
+                </div>
+                <span class="font-mono text-xs font-bold px-3 py-1 rounded-full bg-sage-light text-sage-dark">08/2025 – 10/2026</span>
+              </div>
+              <ul class="text-sm text-sage-muted space-y-1.5 list-disc pl-5 mt-3">
+                <li>Quản lý và đồng hành cùng team sáng tạo (Designer, Video Editor, Cameraman) sản xuất ấn phẩm truyền thông đa phương tiện (Video, Key Visual, Motion Graphics).</li>
+                <li>Định hướng nghệ thuật, xây dựng concept và phê duyệt chất lượng hình ảnh/âm thanh của toàn bộ dự án, đảm bảo đồng bộ nhận diện thương hiệu.</li>
+                <li>Lập kế hoạch, phân công công việc và quản lý timeline đảm bảo các chiến dịch truyền thông ra mắt đúng hạn.</li>
+                <li>Cập nhật xu hướng thiết kế và công nghệ mới nhằm tối ưu hóa chất lượng hiển thị trên các nền tảng mạng xã hội.</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5 sm:p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink">Multimedia Designer — TNI Corporation</h3>
+                  <p class="text-xs font-semibold text-sage-dark">2D Design, Motion Graphics & Quay Chụp Sự Kiện</p>
+                </div>
+                <span class="font-mono text-xs font-bold px-3 py-1 rounded-full bg-cream-soft text-sage-ink">12/2019 – 08/2025</span>
+              </div>
+              <ul class="text-sm text-sage-muted space-y-1.5 list-disc pl-5 mt-3">
+                <li>Thiết kế 2D Digital (Poster, Banner, Edit video, Motion Graphic trên các nền tảng MXH) và ấn phẩm in ấn – POSM.</li>
+                <li>Sản xuất 2D Animation và dựng video quảng bá sản phẩm.</li>
+                <li>Chịu trách nhiệm chụp hình, quay phim các sự kiện quan trọng cho <strong>CEO Lê Hoàng Diệp Thảo</strong> cùng các sự kiện lớn của tập đoàn.</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5 sm:p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink">Chuyên Viên Thiết Kế — Việt Khởi Land</h3>
+                  <p class="text-xs font-semibold text-sage-dark">Thiết Kế Truyền Thông & Ấn Phẩm Bất Động Sản</p>
+                </div>
+                <span class="font-mono text-xs font-bold px-3 py-1 rounded-full bg-cream-soft text-sage-ink">09/2018 – 12/2019</span>
+              </div>
+              <ul class="text-sm text-sage-muted space-y-1.5 list-disc pl-5 mt-3">
+                <li>Thiết kế ấn phẩm 2D Digital (Poster, Banner, Video, Motion Graphic MXH) và bộ ấn phẩm in ấn (Tờ rơi, Catalogue, Standee...).</li>
+                <li>Trực tiếp chụp hình, quay phim các sự kiện truyền thông và mở bán dự án cho công ty.</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl bg-cream-bg border border-sage-border p-5 sm:p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-lg font-extrabold text-sage-ink">Chuyên Viên Thiết Kế — Syslytic</h3>
+                  <p class="text-xs font-semibold text-sage-dark">UI/UX Web, Mobile App & Motion Graphics</p>
+                </div>
+                <span class="font-mono text-xs font-bold px-3 py-1 rounded-full bg-cream-soft text-sage-ink">06/2014 – 09/2018</span>
+              </div>
+              <ul class="text-sm text-sage-muted space-y-1.5 list-disc pl-5 mt-3">
+                <li>Thiết kế giao diện 2D Layout Website và ứng dụng di động (Mobile App).</li>
+                <li>Phát triển trải nghiệm UX/UI cho hệ thống App quản lý Salon – Nail tại thị trường Mỹ (<strong>EEzZ</strong>) và sản xuất Motion Graphic giới thiệu sản phẩm.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-sage-light/70 border border-sage/30 p-5 space-y-4">
+            <span class="block text-xs font-mono uppercase font-bold text-sage-dark">Học Vấn & Chứng Chỉ Chuyên Ngành</span>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3.5 border-b border-sage/20">
+              <h4 class="text-base font-extrabold text-sage-ink">Arena Multimedia — Advanced Diploma in Multimedia (ADIM)</h4>
+              <span class="font-mono text-xs font-bold px-3 py-1.5 rounded-full bg-white text-sage-dark w-fit shrink-0">Tốt nghiệp 10/2012 • Cử nhân</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <h4 class="text-base font-extrabold text-sage-ink">Vinalink Media — Digital Marketing Plan</h4>
+              <span class="font-mono text-xs font-bold px-3 py-1.5 rounded-full bg-white text-sage-dark w-fit shrink-0">Tốt nghiệp 07/2025 • Chứng chỉ</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT & PERSONAL DETAILS -->
+        <section id="contact" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bento-card p-6 sm:p-8 flex flex-col justify-between">
+            <div>
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-bold mb-4">
+                ● Thông Tin Cá Nhân
+              </span>
+              <h3 class="text-2xl font-black text-sage-ink mb-4">Hồ Sơ Tóm Tắt</h3>
+              <dl class="space-y-3 text-sm">
+                <div class="flex justify-between py-2 border-b border-sage-border">
+                  <dt class="text-sage-muted">Họ và tên</dt>
+                  <dd class="font-bold text-sage-ink">Nguyễn Ngô Hoàng Nhật</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b border-sage-border">
+                  <dt class="text-sage-muted">Ngày sinh</dt>
+                  <dd class="font-bold text-sage-ink">18/04/1990</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b border-sage-border">
+                  <dt class="text-sage-muted">Quốc tịch / Giới tính</dt>
+                  <dd class="font-bold text-sage-ink">Việt Nam • Nam</dd>
+                </div>
+                <div class="flex justify-between py-2">
+                  <dt class="text-sage-muted">Khu vực</dt>
+                  <dd class="font-bold text-sage-ink text-right">851 Nguyễn Kiệm, Gò Vấp, TP.HCM</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="bento-card p-6 sm:p-8 bg-sage-dark text-white border-sage-dark flex flex-col justify-between">
+            <div>
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-white text-xs font-bold mb-4">
+                ● Kết Nối Hợp Tác
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-black leading-tight">Sẵn sàng đồng hành cùng dự án tiếp theo của bạn.</h3>
+              <p class="text-sm text-white/80 mt-3 leading-relaxed">
+                Liên hệ trực tiếp qua điện thoại hoặc email để trao đổi về nhu cầu thiết kế và hợp tác cho dự án tiếp theo.
+              </p>
+            </div>
+
+            <div class="space-y-3 mt-6 pt-6 border-t border-white/15 text-sm">
+              <a href="tel:+84372112881" class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/20 transition">
+                <span class="font-medium">Điện thoại / Zalo</span>
+                <span class="font-mono font-bold">+84 372 112 881</span>
+              </a>
+              <a href="mailto:nnhoangnhat@gmail.com" class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/20 transition">
+                <span class="font-medium">Email</span>
+                <span class="font-mono font-bold">nnhoangnhat@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- TIGHT OVERLAPPING DEPTH-SCALE SLIDE LIGHTBOX -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-[#1E2B24]/55 backdrop-blur-xl transition-all duration-300">
+    <button id="closeModalBtn" title="Đóng (ESC)" class="fixed top-4 right-4 sm:top-6 sm:right-6 z-40 w-10 h-10 rounded-full bg-[#FAF8F5]/30 hover:bg-sage-dark text-white border border-white/40 flex items-center justify-center font-bold transition backdrop-blur-md shadow-lg">
+      ✕
+    </button>
+
+    <div class="min-h-screen w-full max-w-[1440px] mx-auto px-4 sm:px-8 py-8 sm:py-10 flex flex-col items-center justify-center space-y-6">
+      
+      <h2 id="modalCategory" class="text-2xl sm:text-3xl lg:text-4xl font-black text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] uppercase tracking-widest text-center"></h2>
+
+      <!-- Depth-Scale Sliding Stage -->
+      <div class="w-full space-y-5">
+        <div class="relative w-full flex items-center justify-center select-none py-2">
+          
+          <div id="modalMediaStage" class="w-full h-[300px] sm:h-[430px] lg:h-[500px] relative flex items-center justify-center overflow-visible">
+            <!-- Persistent Slide Cards Injected Here -->
+          </div>
+
+          <button id="prevSlideBtn" title="Ảnh trước (←)" class="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#FAF8F5]/35 hover:bg-sage-dark text-white border border-white/45 flex items-center justify-center shadow-lg transition font-black text-2xl backdrop-blur-md">
+            ‹
+          </button>
+
+          <button id="nextSlideBtn" title="Ảnh tiếp theo (→)" class="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#FAF8F5]/35 hover:bg-sage-dark text-white border border-white/45 flex items-center justify-center shadow-lg transition font-black text-2xl backdrop-blur-md">
+            ›
+          </button>
+        </div>
+
+        <div id="modalDots" class="flex items-center justify-center gap-2 pt-2"></div>
+      </div>
+
+      <!-- Auto-Expanding KV Title Box -->
+      <div class="w-fit max-w-[94vw] mx-auto rounded-2xl bg-[#FAF8F5]/25 backdrop-blur-md border border-white/35 px-6 sm:px-9 py-4 text-center shadow-sm">
+        <h3 id="modalSlideCaption" class="text-base sm:text-xl lg:text-2xl font-black text-white drop-shadow-[0_1px_6px_rgba(30,43,36,0.5)] tracking-tight sm:whitespace-nowrap"></h3>
+        <p id="modalProjectSubtitle" class="text-xs sm:text-sm font-semibold text-white/90 drop-shadow-[0_1px_4px_rgba(30,43,36,0.45)] mt-1"></p>
+      </div>
+
+      <!-- Description Box -->
+      <div class="w-full max-w-4xl mx-auto rounded-2xl bg-[#FAF8F5]/25 backdrop-blur-md border border-white/35 p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <p id="modalDesc" class="text-xs sm:text-sm font-medium text-white/95 drop-shadow-[0_1px_4px_rgba(30,43,36,0.45)] leading-relaxed md:max-w-2xl"></p>
+        <div class="flex flex-wrap gap-1.5 shrink-0" id="modalTools"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // CẤU HÌNH 5 ALBUM PORTFOLIO
+    // =========================================================================
+    const PORTFOLIO_PROJECTS = [
+      {
+        id: 'king-coffee-kv',
+        category: 'key-visual',
+        categoryLabel: 'Key Visual',
+        title: 'King Coffee — Chiến Dịch Key Visual Chủ Đạo',
+        client: 'TNI Corporation / King Coffee',
+        tools: ['Photoshop', 'Illustrator', '3D Mockup'],
+        cover: 'projects/kv/01.jpg',
+        accentBg: 'from-[#4D6D57] to-[#2B4032]',
+        description: 'Bộ sưu tập Key Visual chủ đạo cho các chiến dịch lớn của King Coffee (Tết Sum Vầy, Cà Phê Sữa Đá X3, Trà Oolong, Món Ngon Tròn Vị) triển khai đồng bộ trên toàn quốc.',
+        slides: [
+          { src: 'projects/kv/01.jpg', caption: 'KV 01 — King Coffee Tết Sum Vầy & Quà Tặng Xuân' },
+          { src: 'projects/kv/02.jpg', caption: 'KV 02 — King Coffee X3 Mạnh Gấp 3 Tỉnh Tạo Cả Ngày Dài' },
+          { src: 'projects/kv/03.jpg', caption: 'KV 03 — Trà Oolong Chất Topping Vui' },
+          { src: 'projects/kv/04.jpg', caption: 'KV 04 — Món Ngon Tròn Vị Tiện Lợi Mỗi Ngày' },
+          { src: 'projects/kv/05.jpg', caption: 'KV 05 — Max Tươi Mới Max Tỉnh Táo' }
+        ]
+      },
+      {
+        id: 'posm-branding',
+        category: 'posm',
+        categoryLabel: 'POSM',
+        title: 'Hệ Thống Ấn Phẩm POSM, Catalogue & Booth Sự Kiện',
+        client: 'TNI Corporation & Việt Khởi Land',
+        tools: ['Illustrator', 'Photoshop', '3D Mockup'],
+        cover: 'projects/posm/01.jpg',
+        accentBg: 'from-[#5B7A65] to-[#34493B]',
+        description: 'Trọn bộ vật phẩm quảng cáo điểm bán (POSM), Standee, Wobbler, Hanger siêu thị, Brochure và Catalogue dự án bất động sản với quy chuẩn in ấn chất lượng cao.',
+        slides: [
+          { src: 'projects/posm/01.jpg', caption: 'POSM 01 — Booth Trưng Bày & Kệ Siêu Thị' },
+          { src: 'projects/posm/02.jpg', caption: 'POSM 02 — Standee & Banner Sự Kiện Mở Bán' },
+          { src: 'projects/posm/03.jpg', caption: 'POSM 03 — Bộ Catalogue & Brochure Thương Mại' }
+        ]
+      },
+      {
+        id: 'social-post-campaign',
+        category: 'post',
+        categoryLabel: 'Post',
+        title: 'Chuỗi Thiết Kế Social Post & Banner Digital',
+        client: 'Milano Nail Spa (US) & King Coffee',
+        tools: ['Photoshop', 'Illustrator'],
+        cover: 'projects/post/01.jpg',
+        accentBg: 'from-[#4D6D57] to-[#2B4032]',
+        description: 'Sáng tạo và đồng bộ hệ thống ấn phẩm truyền thông mạng xã hội (Facebook, Instagram Post, Carousel, Banner khuyến mãi theo mùa) tối ưu tỷ lệ tương tác.',
+        slides: [
+          { src: 'projects/post/01.jpg', caption: 'POST 01 — Bộ Sưu Tập Nail Mùa Lễ Hội (Milano Nail Spa)' },
+          { src: 'projects/post/02.jpg', caption: 'POST 02 — Banner Chương Trình Ưu Đãi & Sự Kiện' },
+          { src: 'projects/post/03.jpg', caption: 'POST 03 — Chuỗi Bài Đăng Tương Tác Mạng Xã Hội' }
+        ]
+      },
+      {
+        id: 'motion-graphic-2d',
+        category: 'motion-graphic',
+        categoryLabel: 'Motion Graphic',
+        title: '2D Motion Graphics, Intro & Video Quảng Bá',
+        client: 'TNI Corporation & Syslytic (EEzZ App)',
+        tools: ['After Effects', 'Premiere Pro', 'Illustrator'],
+        cover: 'projects/motion/01.jpg',
+        accentBg: 'from-[#6A8B74] to-[#3B5242]',
+        description: 'Sản xuất 2D Animation, Motion Graphics giới thiệu tính năng ứng dụng EEzZ Salon App tại Mỹ, video LED sự kiện doanh nghiệp và hậu kỳ video thương hiệu.',
+        slides: [
+          { src: 'projects/motion/01.jpg', caption: 'MOTION 01 — Intro & Visual LED Sự Kiện Doanh Nghiệp' },
+          { src: 'projects/motion/02.jpg', caption: 'MOTION 02 — Video Giới Thiệu Tính Năng App EEzZ' },
+          { src: 'projects/motion/03.jpg', caption: 'MOTION 03 — 2D Animation Quảng Bá Sản Phẩm' }
+        ]
+      },
+      {
+        id: 'ai-video-commercial',
+        category: 'ai-video',
+        categoryLabel: 'AI Video',
+        title: 'AI Video Production & Hiệu Ứng Thị Giác Sáng Tạo',
+        client: 'Milano Nail Spa & Commercial R&D',
+        tools: ['AI Video', 'After Effects', 'Premiere Pro'],
+        cover: 'projects/aivideo/01.jpg',
+        accentBg: 'from-[#365341] to-[#1E2B24]',
+        description: 'Ứng dụng công nghệ AI Video Generation kết hợp dựng hậu kỳ After Effects để sản xuất TVC sản phẩm, video ngắn (Reels/TikTok) với hiệu ứng thị giác ấn tượng.',
+        slides: [
+          { src: 'projects/aivideo/01.jpg', caption: 'AI VIDEO 01 — TVC Sản Phẩm Ứng Dụng Generative AI' },
+          { src: 'projects/aivideo/02.jpg', caption: 'AI VIDEO 02 — Reels / Short Video Hiệu Ứng Chuyển Cảnh' },
+          { src: 'projects/aivideo/03.jpg', caption: 'AI VIDEO 03 — Storyboard & Phối Cảnh 3D AI' }
+        ]
+      }
+    ];
+
+    const gridEl = document.getElementById('portfolioGrid');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    function renderProjects(filter = 'all') {
+      const items = filter === 'all'
+        ? PORTFOLIO_PROJECTS
+        : PORTFOLIO_PROJECTS.filter(p => p.category === filter);
+
+      gridEl.innerHTML = items.map((proj) => `
+        <article onclick="openProjectModal('${proj.id}')" class="project-card cursor-pointer rounded-2xl bg-cream-bg border border-sage-border overflow-hidden flex flex-col justify-between group">
+          <div>
+            <!-- Clean Thumbnail Box -->
+            <div class="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br ${proj.accentBg}">
+              <img
+                src="${proj.cover}"
+                alt="${proj.title}"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div style="display:none" class="w-full h-full p-5 flex-col justify-end text-white">
+                <div>
+                  <p class="text-[11px] text-white/75 font-medium">${proj.client}</p>
+                  <h4 class="text-base font-extrabold leading-snug mt-0.5 line-clamp-2">${proj.title}</h4>
+                </div>
+              </div>
+              <span class="absolute top-3 right-3 w-8 h-8 rounded-full bg-cream-card/90 text-sage-dark flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition shadow">
+                ↗
+              </span>
+            </div>
+
+            <!-- Card Content -->
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono font-bold text-sage-dark">${proj.categoryLabel}</span>
+                <span class="text-[11px] text-sage-muted truncate max-w-[140px]">${proj.client}</span>
+              </div>
+              <h3 class="text-base font-extrabold text-sage-ink group-hover:text-sage-dark transition line-clamp-2">
+                ${proj.title}
+              </h3>
+              <p class="text-xs text-sage-muted line-clamp-2 leading-relaxed">
+                ${proj.description}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-4 pb-4 pt-2 flex flex-wrap gap-1.5">
+            ${proj.tools.map(t => `<span class="px-2 py-0.5 rounded-md bg-white border border-sage-border text-[10px] font-semibold text-sage-dark">${t}</span>`).join('')}
+          </div>
+        </article>
+      `).join('');
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProjects(btn.dataset.filter);
+      });
+    });
+
+    // =========================================================================
+    // TIGHT OVERLAPPING DEPTH-SCALE SLIDE LIGHTBOX LOGIC
+    // - Computes exact pixel offset from rendered image widths so flanking cards
+    //   always hug closely and tuck ~24% behind the center card's edges!
+    // =========================================================================
+    const modal = document.getElementById('projectModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const prevSlideBtn = document.getElementById('prevSlideBtn');
+    const nextSlideBtn = document.getElementById('nextSlideBtn');
+
+    let currentProject = null;
+    let currentSlideIndex = 0;
+
+    function openProjectModal(projectId) {
+      const proj = PORTFOLIO_PROJECTS.find(p => p.id === projectId);
+      if (!proj) return;
+
+      currentProject = proj;
+      currentSlideIndex = 0;
+
+      document.getElementById('modalCategory').textContent = proj.categoryLabel;
+      document.getElementById('modalProjectSubtitle').textContent = `${proj.title} • ${proj.client}`;
+      document.getElementById('modalDesc').textContent = proj.description;
+      document.getElementById('modalTools').innerHTML = proj.tools.map(t =>
+        `<span class="px-3 py-1 rounded-full bg-[#FAF8F5]/75 text-sage-dark font-bold text-[11px] border border-white/40">${t}</span>`
+      ).join('');
+
+      buildSlideDeck();
+
+      modal.classList.remove('hidden');
+      modal.classList.add('block');
+      document.body.style.overflow = 'hidden';
+
+      // Measure layout after modal becomes visible so offsetWidth is exact
+      requestAnimationFrame(() => updateSlidePositions(false));
+    }
+
+    function buildSlideDeck() {
+      const stage = document.getElementById('modalMediaStage');
+      const slides = currentProject.slides;
+
+      stage.innerHTML = slides.map((slideObj, i) => `
+        <div
+          id="depthCard-${i}"
+          onclick="handleCardClick(${i})"
+          class="depth-slide-card"
+        >
+          <div class="h-full flex items-center justify-center relative">
+            <img
+              src="${slideObj.src}"
+              alt="${slideObj.caption}"
+              onload="if(currentProject) updateSlidePositions(false);"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'; if(currentProject) updateSlidePositions(false);"
+              class="h-full w-auto max-w-[82vw] sm:max-w-[52vw] lg:max-w-[46vw] object-contain rounded-2xl shadow-[0_26px_65px_rgba(0,0,0,0.6)] select-none"
+            />
+            <div style="display:none" class="w-[280px] sm:w-[420px] h-full p-6 rounded-2xl flex-col items-center justify-center text-center text-white bg-gradient-to-br ${currentProject.accentBg} shadow-2xl border border-white/20">
+              <span class="font-mono text-[11px] uppercase tracking-widest px-3 py-1 rounded-full bg-white/15 mb-2">0${i + 1}</span>
+              <h4 class="text-lg sm:text-2xl font-black line-clamp-3">${slideObj.caption}</h4>
+              <p class="text-[11px] text-white/75 mt-2"><code>${slideObj.src}</code></p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function updateSlidePositions(animate = true) {
+      if (!currentProject) return;
+      const slides = currentProject.slides;
+      const total = slides.length;
+      const activeSlide = slides[currentSlideIndex];
+
+      document.getElementById('modalSlideCaption').textContent = activeSlide.caption;
+
+      // Measure rendered pixel width of center card & side cards so they hug tightly
+      // and tuck ~24% behind the center card's left/right edges regardless of aspect ratio
+      const activeCard = document.getElementById(`depthCard-${currentSlideIndex}`);
+      const activeContent = activeCard ? activeCard.firstElementChild : null;
+      const centerW = (activeContent && activeContent.offsetWidth > 60) ? activeContent.offsetWidth : 340;
+
+      slides.forEach((_, i) => {
+        const card = document.getElementById(`depthCard-${i}`);
+        if (!card) return;
+
+        card.style.transition = animate
+          ? 'transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.55s cubic-bezier(0.22, 1, 0.36, 1)'
+          : 'none';
+
+        let rel = i - currentSlideIndex;
+        if (rel > total / 2) rel -= total;
+        if (rel < -total / 2) rel += total;
+
+        const sideContent = card.firstElementChild;
+        const sideW = (sideContent && sideContent.offsetWidth > 60) ? sideContent.offsetWidth : 300;
+        const sideShiftPx = Math.round((centerW * 0.5) + (sideW * 0.75 * 0.5) - (sideW * 0.75 * 0.24));
+
+        if (rel === 0) {
+          card.style.zIndex = '30';
+          card.style.opacity = '1';
+          card.style.filter = 'blur(0px)';
+          card.style.cursor = 'default';
+          card.style.pointerEvents = 'auto';
+          card.style.transform = 'translateX(0px) translateY(0px) scale(1)';
+        } else if (rel === 1) {
+          card.style.zIndex = '15';
+          card.style.opacity = window.innerWidth < 640 ? '0' : '0.82';
+          card.style.filter = 'blur(2.5px)';
+          card.style.cursor = 'pointer';
+          card.style.pointerEvents = window.innerWidth < 640 ? 'none' : 'auto';
+          card.style.transform = `translateX(${sideShiftPx}px) translateY(24px) scale(0.75)`;
+        } else if (rel === -1) {
+          card.style.zIndex = '15';
+          card.style.opacity = window.innerWidth < 640 ? '0' : '0.82';
+          card.style.filter = 'blur(2.5px)';
+          card.style.cursor = 'pointer';
+          card.style.pointerEvents = window.innerWidth < 640 ? 'none' : 'auto';
+          card.style.transform = `translateX(-${sideShiftPx}px) translateY(24px) scale(0.75)`;
+        } else if (rel > 1) {
+          card.style.zIndex = '5';
+          card.style.opacity = '0';
+          card.style.filter = 'blur(6px)';
+          card.style.pointerEvents = 'none';
+          card.style.transform = `translateX(${sideShiftPx + 140}px) translateY(36px) scale(0.60)`;
+        } else {
+          card.style.zIndex = '5';
+          card.style.opacity = '0';
+          card.style.filter = 'blur(6px)';
+          card.style.pointerEvents = 'none';
+          card.style.transform = `translateX(-${sideShiftPx + 140}px) translateY(36px) scale(0.60)`;
+        }
+      });
+
+      const dotsEl = document.getElementById('modalDots');
+      dotsEl.innerHTML = slides.map((_, i) => `
+        <button onclick="goToSlide(${i})" class="h-1.5 rounded-full transition-all ${i === currentSlideIndex ? 'w-7 bg-white shadow' : 'w-1.5 bg-white/45 hover:bg-white/80'}"></button>
+      `).join('');
+    }
+
+    function handleCardClick(index) {
+      if (index === currentSlideIndex) return;
+      goToSlide(index);
+    }
+
+    function goToSlide(targetIndex) {
+      if (!currentProject) return;
+      const total = currentProject.slides.length;
+      const normalized = ((targetIndex % total) + total) % total;
+      if (normalized === currentSlideIndex) return;
+      currentSlideIndex = normalized;
+      updateSlidePositions(true);
+    }
+
+    function stepSlide(delta) {
+      if (!currentProject) return;
+      const total = currentProject.slides.length;
+      currentSlideIndex = ((currentSlideIndex + delta) % total + total) % total;
+      updateSlidePositions(true);
+    }
+
+    prevSlideBtn.addEventListener('click', () => stepSlide(-1));
+    nextSlideBtn.addEventListener('click', () => stepSlide(1));
+
+    window.addEventListener('resize', () => {
+      if (currentProject) updateSlidePositions(false);
+    });
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('block');
+      document.body.style.overflow = '';
+      currentProject = null;
+    }
+
+    closeModalBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target === modal.firstElementChild) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!currentProject) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') stepSlide(-1);
+      if (e.key === 'ArrowRight') stepSlide(1);
+    });
+
+    // Khởi tạo hiển thị dự án (chỉ chạy khi còn khung portfolioGrid)
+    if (document.getElementById('portfolioGrid')) {
+      renderProjects('all');
+    }
+
+    // Active navigation highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-item');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 140;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
